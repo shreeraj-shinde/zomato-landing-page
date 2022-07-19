@@ -2,4 +2,34 @@
     margin : 0;
     padding : 0;
     box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero--section{
+    background: url(images/heroSectionBackground.png);
+    min-height: 60vh;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 68px;
+    height: 60px;
+    align-items: center;
+}
+
+.navbar--menu-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: white;
+    color: white;
+    font-weight: 300;
 }
