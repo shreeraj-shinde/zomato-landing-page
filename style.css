@@ -38,6 +38,81 @@
     display : none;
 }
 
+.hero--section-container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height : calc(60vh - 60px);
+    gap : 32px;
+}
+
+
+.hero--section-logo{
+    width: 280px;
+    height : auto;
+}
+
+.hero--section-heading{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero--section-input-container{
+    background:white;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap : 10px;
+    width : 50%;
+    
+}
+
+.hero--section-input-location,.hero--section-input-search{
+    border: none;
+    outline : none;
+    
+}
+
+.hero--section-input-location{
+    width : 100%;
+    border-right: 2px solid #e0e0e0;
+}
+
+.hero--section-input-search{
+    width : 100%;
+}
+
+.location-icon{
+    color :orangered;
+}
+
+.search-icon{
+    color :black;
+}
+
+.hero--section-input-plus-location{
+    display : flex;
+    gap : 10px;
+    width : 30%;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.hero--section-input-plus-search{
+    display : flex;
+    gap : 10px;
+    width : 70%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
 @media only screen and (max-width : 600px) {
     .navbar--menu-container .link{
         display: none;
@@ -47,7 +122,7 @@
         padding : 16px;
     }
 
-    .hero--section{
+    .hero--section{                                                                                                                                                                                                                          
         min-height: 80vh;
     }
 
@@ -61,5 +136,38 @@
         align-items: center;
     }
     
+    .hero--section-input-container{
+        flex-direction: column;
+        background: transparent;
+    }
+
+    .hero--section-input-location,.hero--section-input-container,.hero--section-input-plus-location{
+        width : 90%;
+    }
+    
+    .hero--section-input-search,.hero--section-input-container,.hero--section-input-plus-search{
+        width : 90%;
+    }
+
+    .hero--section-input-plus-location,.hero--section-input-location{
+        border-radius : 5px;
+        height : 40px;
+        padding : 10px;
+    }
+
+    .hero--section-input-location{
+        border : none;
+    }
+    
+    .hero--section-input-plus-search,.hero--section-input-search{
+        border-radius : 5px;
+        height : 40px;
+        padding : 10px;
+    }
+
+    .hero--section-container{
+        height: calc(80vh - 60px);
+    }
+
 }
 
